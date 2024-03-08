@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compwallah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <section id="home">
+            <h1>Welcome to Compwallah</h1>
+            <p>We provide best internships to upgrade your skills...</p>
+        </section>
+        <section id="projects">
+            <h2>Our Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>This is a brief description of Project 1.</p>
+                <a href="https://abdalelah1.github.io/Basic-Website-Development-for-Compwallah/">View</a>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>This is a brief description of Project 2.</p>
+                <a href="https://github.com/RushiSN/Compwallah_internship.git">View on GitHub</a>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Compwallah is a team of passionate developers...</p>
+            <p1>We Provide Following Internships:- Web development, data science, python development, android development and more...</p1>
+            <p>Providing Top-Notch Software Solutions and IT Services</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Detail</h2>
+            <p>Location:- Pune, India</p>
+            <p1>Email:- contact@internship.compwallah.com</p1>
+            <p>Phone no:- +919403027293</p>
+            <form id="contact-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="name">Subject:</label><br>
+                <input type="text" id="subject" name="subject"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </div>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for reaching out to us!');
+        });
+    </script>
+</body>
+</html>
